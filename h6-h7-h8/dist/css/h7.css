@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*nesting*/
+body {
+  background-color: #272727;
+  color: #fff;
+  font-weight: 900;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  margin-top: 0 auto;
+}
+.main .main__para1,
+.main __para2 {
+  font-weight: 900;
+}
+.main .main__para1:hover,
+.main __para2:hover {
+  color: pink;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+__para2:hover {
+  color: #ff652f;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.two-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* columns */
+.two-columns-grid > * {
+  padding: 1rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  margin-left: 10px;
+  color: #000;
+  /* H2/section titles/desktop */
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+.spantag {
+  color: var(--neutral-cool-dark-grey, #53565a);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.spantitle {
+  color: #53565a;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+.spanall {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.spanHeading {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -2px;
+}
+@media (max-width: 768px) {
+  .two-columns-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .two-columns-grid > * {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.spanImagetxt {
+  color: #53565a;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
